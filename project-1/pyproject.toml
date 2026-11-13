@@ -1,5 +1,5 @@
 [project]
-name = "first-agent"
+name = "project-1"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -7,10 +7,15 @@ authors = [
     { name = "Kubinsky", email = "166978514+teamUgur@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "langchain>=1.5.0",
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.21",
+    "python-dotenv>=1.2.4",
+]
 
 [project.scripts]
-first-agent = "first_agent:main"
+project-1 = "project_1:main"
 
 [build-system]
 requires = ["uv_build>=0.13.5,<0.14.0"]
